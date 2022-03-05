@@ -1,22 +1,22 @@
+import { Link } from "react-router-dom"
 
 export const ProductoItem = ({
     id,
     title,
     price,
-    imagen,
+    image,
     category
 
 }) => {
 
     return (
-
         <>
             <div className="producto">
-                <a href="#">
+                <Link to={`/producto/${id}`}>
                     <div className="producto__img">
-                        <img src={imagen} alt={title} />
+                        <img src={image} alt={title} />
                     </div>
-                </a>
+                </Link>
                 <div className="producto__footer">
                     <h1> {title} </h1>
                     <p> {category} </p>
@@ -25,13 +25,12 @@ export const ProductoItem = ({
                 <div className="buttom">
                     <button className="btn">Añadir al carrito</button>
                     <div>
-                        <a href="#" className="btn">
+                        <Link to={`/producto/${id}`} className="btn">
                             Vista
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
         </>
-
     )
 }

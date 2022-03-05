@@ -3,10 +3,10 @@ const data = {
   items: [
     {
       id: 1,
-      title: "Nike Dunk LD Waffle Sacai Black Nylon",
+      title: "Nike Dunk LD Waffle Black Nylon",
       price: 210,
       image: require('./images/img01.jpg'),
-      category: "nb",
+      category: "nike",
       cantidad: 1,
     },
     {
